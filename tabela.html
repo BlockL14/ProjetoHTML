@@ -5,40 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
+        /* Estilo Geral da tabela */
         table{
             width: 80%;
-            matgin: 50px auto;
+            margin: 50px auto;
             border-collapse: collapse;
-            box-shadow: 0 4px 6px rgba(200, 200,200, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
         }
+
         caption{
             font-size: 1.8rem;
             font-weight: bold;
-            color: #007BFF;
+            color: #00438a;
             margin-bottom: 20px;
         }
+
         th, td{
             padding: 20px;
-            text-alling: left;
+            text-align: left;
             font-size: 1rem;
-            border: 1px solid #ccc;
+            border-bottom: 1px solid #00438a;
         }
+
         th{
             background-color: #00438a;
             color: #fff;
             text-transform: uppercase;
         }
+        
         thead tr{
             border-bottom: 3px solid #333;
         }
-        thead tr:hover{
+
+        tbody tr:hover{
             background-color: #e0f7fa;
-        
         }
+
         tfoot{
-            background-color: #e0f7fa
+            background-color: #e0f7fa;
         }
+
         tfoot td{
             border-top: 2px solid #333;
         }
@@ -46,33 +53,35 @@
 </head>
 <body>
     <table>
-        <caption>Produtos<caption>
-            <thead>
-                <tr>
-                    <th>Produtos</th>
-                    <th>Preços</th>
-                    <th>Quantidade</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>iPad</td>
-                    <td>R$ 3.289,00</td>
-                    <td>5</td>
-                    <td>R$ 16.455,00</td>
-                </tr>
-                <tr>
-                    <td>Sansung S26</td>
-                    <td>R$ 5.500,00</td>
-                    <td>3</td>
-                    <td>R$ !6.500,00</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <td colspan="3">Total</td>
-                <td>R$ 32955,00</td>
-            </tfoot>
+        <caption>Produtos</caption>
+        <thead>
+            <tr>
+                <th>Produtos</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>iPad</td>
+                <td>R$ 3.289,00</td>
+                <td>5</td>
+                <td>R$ 16.455,00</td>
+            </tr>
+            <tr>
+                <td>Sansung S26</td>
+                <td>R$ 5.500,00</td>
+                <td>3</td>
+                <td>R$ 16.500,00</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <td colspan="3">Total</td>
+            <td>R$ 32.955,00</td>
+        </tfoot>
+
     </table>
 </body>
 </html>
